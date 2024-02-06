@@ -1,13 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head> 
-        <title> minha primeira pagina </title>
+        <title> minha primeira pagina semantica </title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                background-color: #f1f1f1;
+        }
+        
+                li a {
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
+                }
+                
+                li a.active {
+                background-color: #04AA6D;
+                color: white;
+                }
+                
+                li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+                }
+</style>
+
 </head>
 
 <body> 
-<h1> eu sou  um título </h1>
-<p>parágrafo da página </p>
-</body>
+        <header><!--Essa tag indica que é o cabeçalho da página -->
+                <nav> <!--Indica que vou colocar um menu-->
+                        <ul>
+                                <li>home</li>
+                                <li>Sobre</li>
+                                <li><a href="https://www.w3schools.com/" target="_blank"> W3Schools </a></li>
+                                <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank"> MDN Web Docs</a></li>
+                                <li><a href="tabelas.html" target="_blank">Tabelas</a></li>
+                        </ul>
+                </nav>
+                <hr>
+        </header>
 
+        <section> <!--Indica que é seção da minha página-->
+                <article>
+                        <img src="https://cdn.sistemawbuy.com.br/arquivos/a48e76d3b4ff8b6e919e194fd7dfcfed/produtos/64405c95bb28d/almanegra2-64405c96dc5f5.jpg" alt="vinho alma negra" width="500" height="333">
+                </article>
+        </section>
+
+        <footer><!--Indica que é o rodapé da pagina-->
+                <p>2024 Minha página Semantica. Todos os direitos reservados!</p>
+        </footer>
+</body>
 </html>
