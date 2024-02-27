@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css"> <!--Estou ligando o arquivo CSS ao HTML-->
+    <title>Calculadora - IMC</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Calculadora IMC</h1>
+        <form id="formulario"> <!--Estou criando um formulário-->
+           <label for="peso" name="peso" id="peso-label">Peso</label>
+           <input type="text" id="peso">
+           <label for="altura" name="altura" id="altura-label">Altura</label>
+           <input type="text" id="altura">
+           <button type="submit">Enviar</button>
+        
+        </form>
+        <div id="resultado"></div>
+    </section>
+
+    <script src="js/calculadora-imc.js"></script>
+
+</body>
+</html>
