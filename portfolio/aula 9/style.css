@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    outline: 0;
+    box-sizing: content-box;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 82vh 13vh 5vh; /*define tamanho das linhas em uma coluna*/
+}
+
+.container{
+    display: flex;
+    justify-content: center; /*centraliza na horizontal*/
+    align-items: center; /*centraliza na vertical*/
+    background-color: bisque;
+    gap: 10px;
+}
+
+.container img{
+ margin-top: 5px;
+ max-width: 100%;
+ max-height: 100%;
+ cursor: pointer;
+ border-radius: 6px;
+}
+
+#imagem-grande-container img{
+    max-width: 100%;
+    max-height: 100%;
+}
